@@ -1,3 +1,4 @@
-# DesenvolvimentoJogosDigitais
+# Projetos de Desnvolvimentos de Jogos Digitais
 
-LAB AirHockey: Livia Lumi Miyabara & Marcio Forner Nepomuceno Almeida - 22.122.040-3
+- Livia Lumi Miyabara - 22.122.045-2
+- Marcio Forner Nepomuceno Almeida - 22.122.040-3
