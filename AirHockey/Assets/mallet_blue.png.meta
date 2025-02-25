@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      mallet_blue_0: 8425747930257184208
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

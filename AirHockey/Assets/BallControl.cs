@@ -30,6 +30,13 @@ public class BallControl : MonoBehaviour
             vel.y = (rb2d.velocity.y / 2) + (coll.collider.attachedRigidbody.velocity.y / 3) + 5;
             rb2d.velocity = vel;
         }
+        if (coll.collider.CompareTag("OpponnetIA"))
+        {
+            Vector2 vel;
+            vel.x = rb2d.velocity.x + 5;
+            vel.y = (rb2d.velocity.y / 2) + (coll.collider.attachedRigidbody.velocity.y / 3) + 5;
+            rb2d.velocity = vel;
+        }
     }
 
     // Reinicializa a posição e velocidade da bola

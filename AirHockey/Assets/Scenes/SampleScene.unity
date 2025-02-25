@@ -130,9 +130,10 @@ GameObject:
   - component: {fileID: 54854647}
   - component: {fileID: 54854646}
   - component: {fileID: 54854648}
+  - component: {fileID: 54854649}
   m_Layer: 0
   m_Name: IA
-  m_TagString: Untagged
+  m_TagString: OpponentIA
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -242,6 +243,20 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 1
+--- !u!114 &54854649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54854645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62d5917fd2e37fa4483c21e068918670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boundYSup: 0
+  boundYInf: 5
 --- !u!1 &284022399
 GameObject:
   m_ObjectHideFlags: 0
