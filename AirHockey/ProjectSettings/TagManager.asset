@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Disco
   - OpponentIA
+  - ScoreSuperior
+  - ScoreInferior
+  - HitSound
+  - SaidaDeSom
   layers:
   - Default
   - TransparentFX

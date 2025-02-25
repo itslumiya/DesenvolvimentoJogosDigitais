@@ -6,6 +6,7 @@ public class PlayerMouse : MonoBehaviour
 {
     public float boundYSup = 0;
     public float boundYInf = 5;
+    public float boundX = 5.8f;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,16 @@ public class PlayerMouse : MonoBehaviour
         else if (pos.y < -boundYInf) {
             pos.y = -boundYInf;
         }
+        if (pos.x > boundX)
+        {
+            pos.x = boundX;
+        }
+        else if (pos.x < -boundX)
+        {
+            pos.x = -boundX;
+        }
+
+
         transform.position = pos;   
     }
 }
