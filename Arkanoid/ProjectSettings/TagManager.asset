@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Text
   - Block
+  - Ball
+  - Cenary Block
+  - LifeCount
   layers:
   - Default
   - TransparentFX
