@@ -370,7 +370,18 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Arcade - Arkanoid - Fields_0: -3773988775388883341
+      Arcade - Arkanoid - Fields_1: 4224967858164605882
+      Arcade - Arkanoid - Fields_10: -5868828634928469804
+      Arcade - Arkanoid - Fields_2: 3420288384509650776
+      Arcade - Arkanoid - Fields_3: 616438986799397523
+      Arcade - Arkanoid - Fields_4: 9072533680289047037
+      Arcade - Arkanoid - Fields_5: 8556803378914536863
+      Arcade - Arkanoid - Fields_6: 4653608987233013830
+      Arcade - Arkanoid - Fields_7: -6322910242983763750
+      Arcade - Arkanoid - Fields_8: 535694627487665485
+      Arcade - Arkanoid - Fields_9: -8595340671083217102
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

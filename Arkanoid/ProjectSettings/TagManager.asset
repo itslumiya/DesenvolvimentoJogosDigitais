@@ -8,7 +8,18 @@ TagManager:
   - Block
   - Ball
   - Cenary Block
+  - BottomWall
+  - Score
+  - LifeCount1
+  - LifeCount2
+  - LifeCount3
+  - LabelVictory
+  - ButtonPreviousLevel
+  - ButtonReplayLevel
+  - ButtonNextLevel
+  - TotalPoints
   - LifeCount
+  - SecureWalls
   layers:
   - Default
   - TransparentFX
