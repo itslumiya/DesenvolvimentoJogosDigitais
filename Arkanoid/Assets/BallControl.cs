@@ -48,7 +48,7 @@ public class BallControl : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.collider.CompareTag("BottomWall") && GameMode == "Pacifico")
+        if (coll.collider.CompareTag("BottomWall") && GameMode == "Normal")
         {
             Lifes--;
 
