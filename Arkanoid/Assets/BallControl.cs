@@ -8,12 +8,31 @@ public class BallControl : MonoBehaviour
 {
     private Rigidbody2D rb2d;
     private UnityEngine.UI.Text Score;
+    private string GameMode;
     private int Lifes = 3;
 
     void Start()
     {
+        GameMode = PlayerPrefs.GetString("GameMode");
         rb2d = GetComponent<Rigidbody2D>();
         Invoke("GoBall", 2);
+
+        var life1 = GameObject.FindWithTag("LifeCount1");
+        var life2 = GameObject.FindWithTag("LifeCount2");
+        var life3 = GameObject.FindWithTag("LifeCount3");
+
+        if (GameMode == "Pacifico")
+        {
+            life1.gameObject.SetActive(false);
+            life2.gameObject.SetActive(false);
+            life3.gameObject.SetActive(false);
+        }
+        else
+        {
+            life1.gameObject.SetActive(true);
+            life2.gameObject.SetActive(true);
+            life3.gameObject.SetActive(true);
+        }
 
     }
 
@@ -29,7 +48,7 @@ public class BallControl : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.collider.CompareTag("BottomWall"))
+        if (coll.collider.CompareTag("BottomWall") && GameMode == "Pacifico")
         {
             Lifes--;
 
@@ -79,15 +98,15 @@ public class BallControl : MonoBehaviour
 
         if (coll.gameObject.tag == "Block")
         {
+            int blockCount = GameObject.FindGameObjectsWithTag("Block").Length;
             Destroy(coll.gameObject);
+            blockCount--;
             Score = GameObject.FindWithTag("Score").GetComponent<UnityEngine.UI.Text>();
             int ScoreInt = int.Parse(Score.text.ToString());
             ScoreInt += 10;
             Score.text = ScoreInt.ToString();
 
-            int blockCount = GameObject.FindGameObjectsWithTag("Block").Length;
-            Debug.Log(blockCount);
-            if (blockCount == 1)
+            if (blockCount == 0)
             {
                 string currentSceneName = SceneManager.GetActiveScene().name;
 
@@ -104,7 +123,7 @@ public class BallControl : MonoBehaviour
                 else
                 {
                     PlayerPrefs.SetInt("CurrentLevel", 3);
-                    SceneManager.LoadScene("Vitoria");
+                    SceneManager.LoadScene("Fim");
                 }
 
             }

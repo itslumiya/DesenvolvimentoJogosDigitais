@@ -15,8 +15,15 @@ public class Arkanoid : MonoBehaviour
 
     }
 
-    public void StartGame()
+    public void StartGamePacific()
     {
+        PlayerPrefs.SetString("GameMode", "Pacifico");
+        SceneManager.LoadScene("Fase 1");
+    }
+
+    public void StartGameNormal()
+    {
+        PlayerPrefs.SetString("GameMode", "Normal");
         SceneManager.LoadScene("Fase 1");
     }
 }

@@ -20,6 +20,7 @@ TagManager:
   - TotalPoints
   - LifeCount
   - SecureWalls
+  - Start
   layers:
   - Default
   - TransparentFX

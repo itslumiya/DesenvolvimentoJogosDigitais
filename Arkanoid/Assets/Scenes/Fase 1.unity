@@ -741,7 +741,7 @@ GameObject:
   - component: {fileID: 148258573}
   m_Layer: 0
   m_Name: Fileira 4
-  m_TagString: Block
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5476,7 +5476,7 @@ GameObject:
   - component: {fileID: 1061826407}
   m_Layer: 0
   m_Name: Fileira 2
-  m_TagString: Block
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5739,7 +5739,7 @@ GameObject:
   - component: {fileID: 1108674144}
   m_Layer: 0
   m_Name: Fileira 5
-  m_TagString: Block
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7532,7 +7532,7 @@ GameObject:
   - component: {fileID: 1339102147}
   m_Layer: 0
   m_Name: Fileira 3
-  m_TagString: Block
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
