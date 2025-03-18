@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms.Impl;
+using UnityEngine.SceneManagement;
 
 public class ProjetilScript : MonoBehaviour
 {
@@ -35,17 +36,22 @@ public class ProjetilScript : MonoBehaviour
                 var life3 = GameObject.FindWithTag("Vida 3");
                 life3.gameObject.SetActive(false);
                 
+                SceneManager.LoadScene("Jogo");
+
             }
             else if (vidas == 1)
             {
                 var life2 = GameObject.FindWithTag("Vida 2");
                 life2.gameObject.SetActive(false);
+                
+                SceneManager.LoadScene("Jogo");
             }
             else if (vidas == 0)
             {
                 var life1 = GameObject.FindWithTag("Vida 1");
                 life1.gameObject.SetActive(false);
-                
+                SceneManager.LoadScene("Derrota");
+
             }
             Destroy(collision.gameObject);
             this.projetilInativo.Invoke();
