@@ -12,8 +12,9 @@ public class NavesScript : MonoBehaviour
     private float speed = 2.0f;
     public ProjetilScript projetil;
     private bool projetilEmCena;
-    private float frequenciaAtaque;
-    System.Random aleatorio = new System.Random();
+    int quantidade;
+    private float frequenciaAtaque = 1.0f;
+    List<GameObject> listaInvasores;
 
 
     // Start is called before the first frame update
@@ -24,6 +25,10 @@ public class NavesScript : MonoBehaviour
         var vel = rb2d.velocity;
         vel.x = speed;
         rb2d.velocity = vel;
+
+        projetilEmCena = false;
+        InvokeRepeating(nameof(Disparar), this.frequenciaAtaque, this.frequenciaAtaque);
+
     }
 
     // Update is called once per frame
@@ -35,13 +40,8 @@ public class NavesScript : MonoBehaviour
             ChangeState();
             timer = 0.0f;
         }
-        int valorAleatorio = aleatorio.Next(0 , 11);
-        if(valorAleatorio < frequenciaAtaque)
-        {
-            Disparar();
-        }
-
-
+        listaInvasores = new List<GameObject>(GameObject.FindGameObjectsWithTag("NaveInimiga"));
+        quantidade = listaInvasores.Count;
     }
     void ChangeState()
     {
@@ -52,12 +52,14 @@ public class NavesScript : MonoBehaviour
 
     private void Disparar()
     {
-        if (!projetilEmCena)
+        foreach(var item in listaInvasores)
         {
-            ProjetilScript projetilDisparado = Instantiate(this.projetil, this.transform.position, Quaternion.identity);
-            projetilDisparado.projetilInativo += ApagarProjetil;
-            projetilEmCena = true;
-        }
+            if(UnityEngine.Random.value <(1.0f / (float)this.quantidade)) 
+            {
+                ProjetilScript projetilDisparado = Instantiate(this.projetil, item.transform.position, Quaternion.identity);
+                break;
+            }
+        }       
     }
 
     private void ApagarProjetil()
