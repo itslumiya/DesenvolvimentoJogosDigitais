@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms.Impl;
 
 public class ProjetilScript : MonoBehaviour
@@ -33,6 +34,7 @@ public class ProjetilScript : MonoBehaviour
             {
                 var life3 = GameObject.FindWithTag("Vida 3");
                 life3.gameObject.SetActive(false);
+                
             }
             else if (vidas == 1)
             {
@@ -43,6 +45,7 @@ public class ProjetilScript : MonoBehaviour
             {
                 var life1 = GameObject.FindWithTag("Vida 1");
                 life1.gameObject.SetActive(false);
+                
             }
             Destroy(collision.gameObject);
             this.projetilInativo.Invoke();

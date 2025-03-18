@@ -7,61 +7,42 @@ using UnityEngine;
 
 public class NavesScript : MonoBehaviour
 {
-    private Rigidbody2D rb2d;
-    private float timer = 0.0f;
+    
+    
     private float waitTime = 1.0f;
     private float speed = 2.0f;
     public ProjetilScript projetil;
     private bool projetilEmCena;
     int quantidade;
     private float frequenciaAtaque = 1.0f;
-    List<GameObject> listaInvasores;
+    GameObject[] listaInvasores;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        rb2d = GetComponent<Rigidbody2D>();
-
-        var vel = rb2d.velocity;
-        vel.x = speed;
-        rb2d.velocity = vel;
-
-        projetilEmCena = false;
-
-        
+        InvokeRepeating(nameof(Disparar), this.frequenciaAtaque, this.frequenciaAtaque);
     }
 
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
-        if (timer >= waitTime)
-        {
-            ChangeState();
-            timer = 0.0f;
-        }
 
-        listaInvasores = new List<GameObject>(GameObject.FindGameObjectsWithTag("NaveInimiga"));
-        if(UnityEngine.Random.value < 0.02f)
-        {
-            Disparar();
-        }
+        listaInvasores = GameObject.FindGameObjectsWithTag("NaveInimiga");
+        quantidade = listaInvasores.Length;
     }
-    void ChangeState()
-    {
-        var vel = rb2d.velocity;
-        vel.x *= -1;
-        rb2d.velocity = vel;
-    }
+    
 
     private void Disparar()
     {
+        Debug.Log("Chamou a func");
         
-        foreach(GameObject invader in listaInvasores)
+        foreach (GameObject invader in listaInvasores)
         {
-            if (UnityEngine.Random.value < 0.02f) 
-            {               
+            Debug.Log("Verificou invasor");
+            if (UnityEngine.Random.value < (1.0f/ (float)this.quantidade)) 
+            {
+                Debug.Log("Disparo");
                 Instantiate(this.projetil, invader.transform.position, Quaternion.identity);
                 break;
             }
