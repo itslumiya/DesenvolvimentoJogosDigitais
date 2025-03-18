@@ -8,7 +8,7 @@ public class PlayerScript : MonoBehaviour
     public KeyCode moveLeft = KeyCode.LeftArrow;
     public KeyCode moveRight = KeyCode.RightArrow;
     public float speed = 10.0f;
-    public float boundX = 3.65f;
+    public float boundX = 10.0f;
     private Rigidbody2D rb2d;
     public ProjetilScript projetil;
     private bool projetilEmCena;

@@ -223,7 +223,7 @@ MonoBehaviour:
   moveLeft: 276
   moveRight: 275
   speed: 10
-  boundX: 3.65
+  boundX: 6.4
   projetil: {fileID: 6659044538752688540, guid: 8009f81c20d5e23478715da88be8ac3c, type: 3}
 --- !u!50 &25785663
 Rigidbody2D:
@@ -4779,7 +4779,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 417.2, y: -386.4}
+  m_AnchoredPosition: {x: 425, y: -338}
   m_SizeDelta: {x: 69.03, y: 51.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &983052569
@@ -6403,7 +6403,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 245.29, y: -386.4}
+  m_AnchoredPosition: {x: 253.08997, y: -338}
   m_SizeDelta: {x: 210.2, y: 51.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1238666710
@@ -10283,7 +10283,7 @@ GameObject:
   - component: {fileID: 2027224867}
   m_Layer: 0
   m_Name: NaveMae
-  m_TagString: NaveInimiga
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

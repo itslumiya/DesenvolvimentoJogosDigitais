@@ -13,13 +13,12 @@ public class ProjetilScript : MonoBehaviour
     public bool aliado;
     private UnityEngine.UI.Text pontuacao;
     private int vidas = 3;
-    // Start is called before the first frame update
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -33,27 +32,22 @@ public class ProjetilScript : MonoBehaviour
             vidas--;
             if (vidas == 2)
             {
-                var life3 = GameObject.FindWithTag("Vida 3");
+                var life3 = GameObject.FindWithTag("Vida3");
                 life3.gameObject.SetActive(false);
-                
-                SceneManager.LoadScene("Jogo");
 
             }
             else if (vidas == 1)
             {
-                var life2 = GameObject.FindWithTag("Vida 2");
+                var life2 = GameObject.FindWithTag("Vida2");
                 life2.gameObject.SetActive(false);
-                
-                SceneManager.LoadScene("Jogo");
             }
             else if (vidas == 0)
             {
-                var life1 = GameObject.FindWithTag("Vida 1");
+                var life1 = GameObject.FindWithTag("Vida1");
                 life1.gameObject.SetActive(false);
                 SceneManager.LoadScene("Derrota");
 
             }
-            Destroy(collision.gameObject);
             this.projetilInativo.Invoke();
             Destroy(this.gameObject);
         }

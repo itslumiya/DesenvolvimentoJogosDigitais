@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      starry-space-vector-background-pixel-art-8-bit-stars-700-188462378_0: -6074593117460486962
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
