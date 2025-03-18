@@ -2,6 +2,7 @@ using System;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Timeline.Actions;
 using UnityEngine;
 
 public class NavesScript : MonoBehaviour
@@ -27,8 +28,8 @@ public class NavesScript : MonoBehaviour
         rb2d.velocity = vel;
 
         projetilEmCena = false;
-        InvokeRepeating(nameof(Disparar), this.frequenciaAtaque, this.frequenciaAtaque);
 
+        
     }
 
     // Update is called once per frame
@@ -40,8 +41,12 @@ public class NavesScript : MonoBehaviour
             ChangeState();
             timer = 0.0f;
         }
+
         listaInvasores = new List<GameObject>(GameObject.FindGameObjectsWithTag("NaveInimiga"));
-        quantidade = listaInvasores.Count;
+        if(UnityEngine.Random.value < 0.02f)
+        {
+            Disparar();
+        }
     }
     void ChangeState()
     {
@@ -52,11 +57,12 @@ public class NavesScript : MonoBehaviour
 
     private void Disparar()
     {
-        foreach(var item in listaInvasores)
+        
+        foreach(GameObject invader in listaInvasores)
         {
-            if(UnityEngine.Random.value <(1.0f / (float)this.quantidade)) 
-            {
-                ProjetilScript projetilDisparado = Instantiate(this.projetil, item.transform.position, Quaternion.identity);
+            if (UnityEngine.Random.value < 0.02f) 
+            {               
+                Instantiate(this.projetil, invader.transform.position, Quaternion.identity);
                 break;
             }
         }       

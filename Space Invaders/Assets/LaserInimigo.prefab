@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: {x: 0, y: -1, z: 0}
-  speed: 20
+  speed: 11
   aliado: 0
 --- !u!50 &7241933918385388746
 Rigidbody2D:
