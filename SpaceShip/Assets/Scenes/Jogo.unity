@@ -246,7 +246,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 486, y: -242}
+  m_AnchoredPosition: {x: 403.4, y: -388}
   m_SizeDelta: {x: 126.19, y: 56.29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &12720658
@@ -370,6 +370,7 @@ GameObject:
   - component: {fileID: 119587456}
   - component: {fileID: 119587457}
   - component: {fileID: 119587458}
+  - component: {fileID: 119587459}
   m_Layer: 0
   m_Name: NaveInimiga (4)
   m_TagString: Inimigo
@@ -492,6 +493,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.23, y: 4.18}
   m_EdgeRadius: 0
+--- !u!50 &119587459
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119587455}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &318781177
 GameObject:
   m_ObjectHideFlags: 0
@@ -537,7 +565,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ffef272a5b4ce74e8a6a855ac2b9937, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxEffect: 0.5
 --- !u!212 &318781180
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -603,6 +630,7 @@ GameObject:
   - component: {fileID: 326904686}
   - component: {fileID: 326904687}
   - component: {fileID: 326904688}
+  - component: {fileID: 326904689}
   m_Layer: 0
   m_Name: NaveInimiga (8)
   m_TagString: Inimigo
@@ -725,6 +753,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.23, y: 4.18}
   m_EdgeRadius: 0
+--- !u!50 &326904689
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326904685}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &482368103
 GameObject:
   m_ObjectHideFlags: 0
@@ -736,6 +791,7 @@ GameObject:
   - component: {fileID: 482368104}
   - component: {fileID: 482368105}
   - component: {fileID: 482368106}
+  - component: {fileID: 482368107}
   m_Layer: 0
   m_Name: NaveInimiga (6)
   m_TagString: Inimigo
@@ -858,6 +914,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.23, y: 4.18}
   m_EdgeRadius: 0
+--- !u!50 &482368107
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482368103}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &754989418
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,7 +975,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 377.6, y: -241.99998}
+  m_AnchoredPosition: {x: 295, y: -388}
   m_SizeDelta: {x: 179.38, y: 56.29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &754989420
@@ -948,6 +1031,7 @@ GameObject:
   - component: {fileID: 780419380}
   - component: {fileID: 780419381}
   - component: {fileID: 780419382}
+  - component: {fileID: 780419383}
   m_Layer: 0
   m_Name: NaveInimiga (5)
   m_TagString: Inimigo
@@ -1070,6 +1154,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.23, y: 4.18}
   m_EdgeRadius: 0
+--- !u!50 &780419383
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780419379}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &839452774
 GameObject:
   m_ObjectHideFlags: 0
@@ -1081,6 +1192,7 @@ GameObject:
   - component: {fileID: 839452775}
   - component: {fileID: 839452776}
   - component: {fileID: 839452777}
+  - component: {fileID: 839452778}
   m_Layer: 0
   m_Name: NaveInimiga (11)
   m_TagString: Inimigo
@@ -1203,6 +1315,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.23, y: 4.18}
   m_EdgeRadius: 0
+--- !u!50 &839452778
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839452774}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1007728900
 GameObject:
   m_ObjectHideFlags: 0
@@ -1317,6 +1456,7 @@ GameObject:
   - component: {fileID: 1125572072}
   - component: {fileID: 1125572073}
   - component: {fileID: 1125572074}
+  - component: {fileID: 1125572075}
   m_Layer: 0
   m_Name: NaveInimiga (10)
   m_TagString: Inimigo
@@ -1439,6 +1579,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.23, y: 4.18}
   m_EdgeRadius: 0
+--- !u!50 &1125572075
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125572071}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1283873980
 GameObject:
   m_ObjectHideFlags: 0
@@ -1450,6 +1617,7 @@ GameObject:
   - component: {fileID: 1283873981}
   - component: {fileID: 1283873982}
   - component: {fileID: 1283873983}
+  - component: {fileID: 1283873984}
   m_Layer: 0
   m_Name: NaveInimiga (3)
   m_TagString: Inimigo
@@ -1572,6 +1740,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.23, y: 4.18}
   m_EdgeRadius: 0
+--- !u!50 &1283873984
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283873980}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1378000682
 GameObject:
   m_ObjectHideFlags: 0
@@ -1621,7 +1816,7 @@ GameObject:
   - component: {fileID: 1506300123}
   m_Layer: 0
   m_Name: NavePlayer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1806,7 +2001,7 @@ MonoBehaviour:
   moveDown: 274
   speed: 10
   boundY: 5
-  projetil: {fileID: 0}
+  projetil: {fileID: 4275011414276242970, guid: 33e7f7296941b9043bffc7910c634dc6, type: 3}
 --- !u!1 &1609684348
 GameObject:
   m_ObjectHideFlags: 0
@@ -1818,6 +2013,7 @@ GameObject:
   - component: {fileID: 1609684349}
   - component: {fileID: 1609684350}
   - component: {fileID: 1609684351}
+  - component: {fileID: 1609684352}
   m_Layer: 0
   m_Name: NaveInimiga (9)
   m_TagString: Inimigo
@@ -1940,6 +2136,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.23, y: 4.18}
   m_EdgeRadius: 0
+--- !u!50 &1609684352
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609684348}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1775000412
 GameObject:
   m_ObjectHideFlags: 0
@@ -1951,6 +2174,7 @@ GameObject:
   - component: {fileID: 1775000413}
   - component: {fileID: 1775000414}
   - component: {fileID: 1775000415}
+  - component: {fileID: 1775000416}
   m_Layer: 0
   m_Name: NaveInimiga (7)
   m_TagString: Inimigo
@@ -2073,6 +2297,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.23, y: 4.18}
   m_EdgeRadius: 0
+--- !u!50 &1775000416
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775000412}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1826095113
 GameObject:
   m_ObjectHideFlags: 0
@@ -2119,7 +2370,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ffef272a5b4ce74e8a6a855ac2b9937, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxEffect: 0.5
 --- !u!212 &1826095116
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2228,6 +2478,7 @@ GameObject:
   - component: {fileID: 1975120002}
   - component: {fileID: 1975120003}
   - component: {fileID: 1975120004}
+  - component: {fileID: 1975120005}
   m_Layer: 0
   m_Name: NaveInimiga (2)
   m_TagString: Inimigo
@@ -2350,6 +2601,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.23, y: 4.18}
   m_EdgeRadius: 0
+--- !u!50 &1975120005
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975120001}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &2013969582
 GameObject:
   m_ObjectHideFlags: 0
@@ -2361,6 +2639,7 @@ GameObject:
   - component: {fileID: 2013969583}
   - component: {fileID: 2013969584}
   - component: {fileID: 2013969585}
+  - component: {fileID: 2013969586}
   m_Layer: 0
   m_Name: NaveInimiga
   m_TagString: Inimigo
@@ -2483,6 +2762,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.23, y: 4.18}
   m_EdgeRadius: 0
+--- !u!50 &2013969586
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013969582}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &2042145500
 GameObject:
   m_ObjectHideFlags: 0
@@ -2494,6 +2800,7 @@ GameObject:
   - component: {fileID: 2042145501}
   - component: {fileID: 2042145502}
   - component: {fileID: 2042145503}
+  - component: {fileID: 2042145504}
   m_Layer: 0
   m_Name: NaveInimiga (1)
   m_TagString: Inimigo
@@ -2616,6 +2923,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.23, y: 4.18}
   m_EdgeRadius: 0
+--- !u!50 &2042145504
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2042145500}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

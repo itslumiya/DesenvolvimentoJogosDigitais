@@ -7,10 +7,11 @@ public class NavePlayer : MonoBehaviour
     public KeyCode moveUp = KeyCode.UpArrow;
     public KeyCode moveDown = KeyCode.DownArrow;
     public float speed = 5f;
-    public float boundY = 5f;
+    public float boundY = 1f;
     private Rigidbody2D rb2d;
     public ProjetilScript projetil;
     private bool projetilEmCena;
+    private UnityEngine.UI.Text pontuacao;
 
     void Start()
     {
@@ -50,20 +51,25 @@ public class NavePlayer : MonoBehaviour
             pos.y = -boundY;
         }
         transform.position = pos;
+
+
+        pontuacao = GameObject.FindWithTag("Pontuacao").GetComponent<UnityEngine.UI.Text>();
     }
 
     private void Disparar()
     {
-        if (!projetilEmCena)
-        {
-            ProjetilScript projetilDisparado = Instantiate(this.projetil, this.transform.position, Quaternion.identity);
-            projetilDisparado.projetilInativo += ApagarProjetil;
-            projetilEmCena = true;
-        }
+
+        ProjetilScript projetilDisparado = Instantiate(this.projetil, this.transform.position, Quaternion.Euler(0, 0, 270));
+        projetilDisparado.projetilInativo += ApagarProjetil;
     }
 
     private void ApagarProjetil()
     {
         projetilEmCena = false;
+    }
+
+    private void SlowMotion()
+    {
+        speed = 1f;
     }
 }
