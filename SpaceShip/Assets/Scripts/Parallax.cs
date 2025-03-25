@@ -32,15 +32,12 @@ public class Parallax : MonoBehaviour
             }
         }
         
-        if(pontuacao == 120)
+        if(pontuacao == 330)
         {
             SceneManager.LoadScene("Vitoria");
         }
         
     }
-
-
-
 
     void slow()
     {

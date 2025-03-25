@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NavePlayer : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class NavePlayer : MonoBehaviour
 
     void Start()
     {
+        pontuacao = GameObject.FindWithTag("Pontuacao").GetComponent<UnityEngine.UI.Text>();
+        pontuacao.text = "0";
         rb2d = GetComponent<Rigidbody2D>();
     }
 
@@ -56,9 +59,15 @@ public class NavePlayer : MonoBehaviour
         pontuacao = GameObject.FindWithTag("Pontuacao").GetComponent<UnityEngine.UI.Text>();
     }
 
+    void OnCollisionEnter2D (Collision2D coll) {
+        if(coll.collider.CompareTag("Inimigo")){
+            SceneManager.LoadScene("Derrota");
+        }
+    }
+
     private void Disparar()
     {
-
+        Debug.Log("Teste");
         ProjetilScript projetilDisparado = Instantiate(this.projetil, this.transform.position, Quaternion.Euler(0, 0, 270));
         projetilDisparado.projetilInativo += ApagarProjetil;
     }
