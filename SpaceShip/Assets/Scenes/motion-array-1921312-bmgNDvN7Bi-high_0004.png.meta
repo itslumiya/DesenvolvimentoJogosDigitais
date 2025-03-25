@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      motion-array-1921312-bmgNDvN7Bi-high_0004_0: -1623585300867702788
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Farback01_0: 1461140277910271400
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
