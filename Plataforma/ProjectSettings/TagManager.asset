@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - FallZone
+  - Life3
+  - Life2
+  - Life1
+  - Cherry
+  - Count
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -11,7 +18,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Ground
   - 
   - 
   - 

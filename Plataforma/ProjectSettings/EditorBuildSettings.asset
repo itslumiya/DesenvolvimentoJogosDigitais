@@ -5,8 +5,20 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Fase1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: dd2bf6826081dfb4795870c861f25029
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: eaff612f406802b4d8fd79c05c578a91
+  - enabled: 1
+    path: Assets/Scenes/YouWin.unity
+    guid: c39a9413320a207468ffcb03e2010acb
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 0d98b8f4025a9d5438cf3a091354f539
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
